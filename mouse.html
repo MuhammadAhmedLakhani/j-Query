@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+    <style>
+
+        .main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background: #eee;
+            border: 1px solid black;
+            border-radius: 2px;
+            max-width: 300px;
+            min-height: 300px;
+            padding: 10px;
+        }
+        .card-body {
+            padding: 10px;
+            background-color: #fff;
+        }
+    </style>
+    <!-- ----------------- Jqury cdn------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="card-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia dolor maiores porro architecto
+                    voluptate, inventore sunt minus odit accusantium unde minima labore natus nam obcaecati corporis!
+                    Vero autem quas doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis nostrum ab, et cum sapiente doloribus culpa amet itaque esse iure assumenda minima optio! Quia ab temporibus obcaecati deserunt laudantium.</p>
+            </div>
+            <h3>Mouse Hover on me</h3>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.card').mouseenter(function(){
+                $(this).css("background-color","red")
+                $('h3').text('Mouse hovered')
+            })
+            $('.card').mouseleave(function(){
+                $(this).css("background-color","#eee")
+                $('h3').text('Please bring Mouse on me')
+            })
+
+        })
+    </script>
+</body>
+
+</html>
