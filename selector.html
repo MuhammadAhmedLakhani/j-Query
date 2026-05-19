@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ----------------- Jqury cdn------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: #eee;
+            border: 1px solid black;
+            border-radius: 2px;
+            max-width: 300px;
+            min-height: 300px;
+            padding: 10px;
+        }
+
+        .card-body {
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: rgb(88, 117, 141);
+            border-radius: 20px;
+            color: #fff;
+        }
+        .btn-cont {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card" id="card-id">
+            <div class="card-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia dolor maiores porro architecto
+                    voluptate, inventore sunt minus odit accusantium unde minima labore natus nam obcaecati corporis!
+                    Vero autem quas doloremque?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis nostrum ab, et cum sapiente
+                    doloribus culpa amet itaque esse iure assumenda minima optio! Quia ab temporibus obcaecati deserunt
+                    laudantium.</p>
+            </div>
+            <h3>Mouse Hover on me</h3>
+            <div class="btn-cont">
+                <a href="#" class="btn">Hide me</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $('.btn').click(function(){
+            $('.card').hide()
+        })
+    </script>
+</body>
+
+</html>
