@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+    <!-- ----------------- Jqury cdn------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .box {
+            padding: 10px 20px;
+            background-color: #9c9a9a;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 20px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#" class="box">
+        Click me
+    </a>
+
+
+    <script>
+        $('.box').click(function(){
+            $('.box').animate({'left':'50%','bottom':'50%'},800)
+        })
+    </script>
+</body>
+
+</html>
